@@ -1,15 +1,19 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace LRogue
 {
-    internal class Cell
+    internal class Cell : IDrawable
     {
         public List<Item> Items { get; set; } = new List<Item>();
 
-        private readonly string symbol;
+        public string Symbol => " . ";
+
+        public ConsoleColor Color { get; set; }
+
         public Cell()
         {
-            symbol = ".";
+            Color = ConsoleColor.Red;
         }
     }
 }

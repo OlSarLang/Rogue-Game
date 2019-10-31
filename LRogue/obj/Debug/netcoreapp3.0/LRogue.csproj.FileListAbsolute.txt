@@ -1,0 +1,11 @@
+C:\Users\Elev\source\repos\LRogue\LRogue\bin\Debug\netcoreapp3.0\LRogue.exe
+C:\Users\Elev\source\repos\LRogue\LRogue\bin\Debug\netcoreapp3.0\LRogue.deps.json
+C:\Users\Elev\source\repos\LRogue\LRogue\bin\Debug\netcoreapp3.0\LRogue.runtimeconfig.json
+C:\Users\Elev\source\repos\LRogue\LRogue\bin\Debug\netcoreapp3.0\LRogue.runtimeconfig.dev.json
+C:\Users\Elev\source\repos\LRogue\LRogue\bin\Debug\netcoreapp3.0\LRogue.dll
+C:\Users\Elev\source\repos\LRogue\LRogue\bin\Debug\netcoreapp3.0\LRogue.pdb
+C:\Users\Elev\source\repos\LRogue\LRogue\obj\Debug\netcoreapp3.0\LRogue.csprojAssemblyReference.cache
+C:\Users\Elev\source\repos\LRogue\LRogue\obj\Debug\netcoreapp3.0\LRogue.AssemblyInfoInputs.cache
+C:\Users\Elev\source\repos\LRogue\LRogue\obj\Debug\netcoreapp3.0\LRogue.AssemblyInfo.cs
+C:\Users\Elev\source\repos\LRogue\LRogue\obj\Debug\netcoreapp3.0\LRogue.dll
+C:\Users\Elev\source\repos\LRogue\LRogue\obj\Debug\netcoreapp3.0\LRogue.pdb

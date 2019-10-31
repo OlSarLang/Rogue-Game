@@ -1,19 +1,22 @@
-﻿namespace LRogue
+﻿using System;
+using System.Collections.Generic;
+
+namespace LRogue
 {
     internal class Map
     {
-        private readonly int width;
-        private readonly int height;
-        public int Width => width;
-        public int Height => height;
+        public int Width { get; }
+        public int Height { get; }
 
         //TODO: Make Comment
         private readonly Cell[,] cells;
 
+        public List<Creature> Creatures { get; set; } = new List<Creature>();
+
         public Map(int width, int height)
         {
-            this.width = width;
-            this.height = height;
+            Width = width;
+            Height = height;
 
             cells = new Cell[height, width];
 
@@ -27,5 +30,9 @@
             }
         }
 
+        internal Cell GetCell(int y, int x)
+        {
+            return cells[y, x];
+        }
     }
 }

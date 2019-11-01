@@ -6,7 +6,5 @@
         {
             Color = System.ConsoleColor.Yellow;
         }
-
-
     }
 }

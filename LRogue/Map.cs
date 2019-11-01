@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LRogue
 {
@@ -9,7 +10,7 @@ namespace LRogue
         public int Height { get; }
 
         //TODO: Make Comment
-        private readonly Cell[,] cells;
+        private Cell[,] cells;
 
         public List<Creature> Creatures { get; set; } = new List<Creature>();
 
@@ -25,7 +26,7 @@ namespace LRogue
                 
                 for (int x = 0; x < width; x++)
                 {
-                    cells[y, x] = new Cell();
+                    cells[y, x] = new Cell(y, x);
                 }
             }
         }
@@ -33,6 +34,22 @@ namespace LRogue
         internal Cell GetCell(int y, int x)
         {
             return cells[y, x];
+        }
+
+        internal void Move(Creature creature, int a, bool Yaxis)
+        {
+            var obj = Creatures.FirstOrDefault(c => c.Cell == creature.Cell);
+            if (Yaxis)
+            {
+                Console.WriteLine($"Y: {obj.Cell.PosY}");
+                obj.Cell.PosY += a;
+                Console.WriteLine($"Y: {obj.Cell.PosY}");
+            } else
+            {
+                Console.WriteLine($"X: {obj.Cell.PosX}");
+                obj.Cell.PosX += a;
+                Console.WriteLine($"X: {obj.Cell.PosX}");
+            }
         }
     }
 }

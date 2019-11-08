@@ -8,6 +8,8 @@ namespace LRogue.Creatues
     {
         public Goblin(Cell cell) : base(cell, " G ")
         {
+            Health = 25;
+            Damage = 15;
         }
     }
 }

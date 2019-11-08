@@ -1,0 +1,3 @@
+C:\Users\Elev\source\repos\LRogue\LimitedList\obj\Debug\netcoreapp3.0\LimitedList.csprojAssemblyReference.cache
+C:\Users\Elev\source\repos\LRogue\LimitedList\obj\Debug\netcoreapp3.0\LimitedList.AssemblyInfoInputs.cache
+C:\Users\Elev\source\repos\LRogue\LimitedList\obj\Debug\netcoreapp3.0\LimitedList.AssemblyInfo.cs

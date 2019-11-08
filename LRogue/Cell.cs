@@ -10,13 +10,12 @@ namespace LRogue
         public string Symbol => " . ";
 
         public ConsoleColor Color { get; set; }
-        public int PosX { get; set; }
-        public int PosY { get; set; }
 
-        public Cell(int y, int x)
+        public Position Position { get; }
+
+        public Cell(Position p)
         {
-            PosY = y;
-            PosX = x;
+            Position = p;
             Color = ConsoleColor.Red;
         }
     }

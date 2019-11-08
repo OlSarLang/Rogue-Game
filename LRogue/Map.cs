@@ -26,30 +26,20 @@ namespace LRogue
                 
                 for (int x = 0; x < width; x++)
                 {
-                    cells[y, x] = new Cell(y, x);
+                    cells[y, x] = new Cell(new Position(y, x));
                 }
             }
         }
 
         internal Cell GetCell(int y, int x)
         {
+            if (x < 0 || x >= Width || y < 0 || y >= Height) return null;
             return cells[y, x];
         }
 
-        internal void Move(Creature creature, int a, bool Yaxis)
+        internal Cell GetCell(Position newPosition)
         {
-            var obj = Creatures.FirstOrDefault(c => c.Cell == creature.Cell);
-            if (Yaxis)
-            {
-                Console.WriteLine($"Y: {obj.Cell.PosY}");
-                obj.Cell.PosY += a;
-                Console.WriteLine($"Y: {obj.Cell.PosY}");
-            } else
-            {
-                Console.WriteLine($"X: {obj.Cell.PosX}");
-                obj.Cell.PosX += a;
-                Console.WriteLine($"X: {obj.Cell.PosX}");
-            }
+            return GetCell(newPosition.Y, newPosition.X);
         }
     }
 }
